@@ -1,46 +1,128 @@
-# Getting Started with Create React App
+# Healthy App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Healthy is small web application UI challenge for interview.
+Time spent: **7** hours spent in total
 
-## Available Scripts
+- Tech stack using for App: ReactJS, Typescript, TailwindCSS.
 
-In the project directory, you can run:
+## Required functionality
 
-### `npm start`
+- [x] Build Cleanly Codebase
+- [x] Build Top Page
+- [x] Build My Record Page
+- [x] Build Column page
+- [x] Responsive
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tech Stack
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [ReactJS]
+- [Typescript]
+- [TailwindCSS]
+- [ReactRouterV6]
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Healthy App requires [Node.js](https://nodejs.org/) v14+ to run.
 
-### `npm run build`
+Run Project:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+cd healthy-app
+yarn
+yarn start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- web run on url <http://localhost:3000>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Structure (src)
 
-### `npm run eject`
+```
+├── src
+├─────_mock
+│     ├───── dataColumn.ts
+│     ├───── dataExercises.json
+│     ├───── index.ts
+│     ├───── ...
+├───── assets
+│     ├───── fonts
+│     ├───── icons
+│     ├───── images
+├───── components
+│     ├───── Button
+│     ├────────── CircleIconButton.tsx
+│     ├────────── PrimaryButton.tsx
+│     ├────────── index.tsx
+│     ├───── Card
+│     ├────────── ColumnCard.tsx
+│     ├────────── MyDiaryListCard.tsx
+│     ├────────── PhotoCard.tsx
+│     ├────────── RecommendedCard.tsx
+│     ├────────── RecordCard.tsx
+│     ├────────── index.tsx
+│     ├───── DropdownMenu
+│     ├────────── DropdownItem.tsx
+│     ├────────── index.tsx
+│     ├───── Hex
+│     ├────────── index.tsx
+│     ├───── HomeBanner
+│     ├────────── index.tsx
+│     ├───── LineChart
+│     ├────────── TableLineChart.tsx
+│     ├────────── index.tsx
+│     ├───── ListMyExercise
+│     ├────────── ItemExercise.tsx
+│     ├────────── index.tsx
+│     ├───── Logo
+│     ├────────── index.tsx
+│     ├───── NavBar
+│     ├────────── NavBarItem.tsx
+│     ├────────── index.tsx
+├───── hooks
+│     ├───── useResponsive.ts
+│     ├───── useScrollToTop.ts
+│     ├───── useToggle.ts
+├───── layout
+│     ├───── Footer
+│     ├───── Header
+│     ├───── index.tsx
+├───── pages
+│     ├───── Column.tsx
+│     ├───── Home.tsx
+│     ├───── MyRecord.tsx
+├───── router
+│     ├───── index.tsx
+├───── styles
+│     ├───── index.css
+├───── index.js
+├───── react-app-env.d.ts
+├───── reportWebVitals.ts
+├───── setupTests.ts
+```
+### Package
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```json
+{
+    "dependencies": {
+        "@testing-library/jest-dom": "^5.16.5",
+        "@testing-library/react": "^13.4.0",
+        "@testing-library/user-event": "^13.5.0",
+        "@types/jest": "^27.5.2",
+        "@types/node": "^16.18.6",
+        "@types/react": "^18.0.26",
+        "@types/react-dom": "^18.0.9",
+        "chart.js": "^4.0.1",
+        "react": "^18.2.0",
+        "react-chartjs-2": "^5.0.1",
+        "react-dom": "^18.2.0",
+        "react-icons": "^4.7.1",
+        "react-router-dom": "^6.4.5",
+        "react-scripts": "5.0.1",
+        "typescript": "^4.9.4",
+        "web-vitals": "^2.1.4"
+    }
+}
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+MIT

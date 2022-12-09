@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("./../assets/fonts/Inter/Inter-Light.ttf");
+}
+
+@font-face {
+  font-family: "Noto-Sans-JP-Regular";
+  src: url("./../assets/fonts/Noto_Sans_JP/NotoSansJP-Light.otf");
+}
+
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto-Sans-JP-Regular';
+  overflow-x: hidden;
+}
+
+.custom-btn {
+  background: linear-gradient(32.95deg, #FFCC21 8.75%, #FF963C 86.64%);
+}
+
+.hex-shape {
+  -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  transform: rotate(-90deg);
+  background: linear-gradient(155.89deg, #FFCC21 8.26%, #FF963C 91.18%);
+}
+
+.custom-shadow {
+  box-shadow: 0px 3px 6px 0px #00000029;
+}
+.custom-shadow-red {
+  text-shadow: 0px 0px 6px #FC7400;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #777777;
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FFCC21; 
+  border-radius: 10px;
+  background-clip: padding-box;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FFCC21; 
+}
