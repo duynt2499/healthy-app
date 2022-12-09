@@ -8,9 +8,10 @@ Time spent: **7** hours spent in total
 ## Required functionality
 
 - [x] Build Cleanly Codebase
+- [x] Build Component UI system
 - [x] Build Top Page
 - [x] Build My Record Page
-- [x] Build Column page
+- [x] Build Column Page
 - [x] Responsive
 
 ## Tech Stack
@@ -122,6 +123,15 @@ yarn start
     }
 }
 ```
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+> Video
+
+https://user-images.githubusercontent.com/52862752/206626936-30d1d364-ac31-4d31-a03b-18f97afcf71e.mp4
+
+> Link Production
+> https://healthy-app.vercel.app/
 
 ## License
 
